@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d4a5e0, #845ec2); /* Smooth gradient background */
+    min-height: 100vh; /* Ensure background covers the entire viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background-image: url("logo/07a859c8-e5f6-4e4b-b719-6674d1debe89.webp");
+    background-size: cover; /* Fully cover the .menu area */
+    background-repeat: no-repeat;
+    background-position: center; /* Center-align the image */
+    color: white;
+    width: 600px; /* Fixed width for consistency */
+    min-height: 900px; /* Ensures the menu has sufficient height */
+    margin: 20px auto;
+    padding: 30px 20px; /* Add padding for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Necessary for overlay effects */
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    border-radius: 10px;
+    z-index: 0; /* Place behind the text */
+}
+
+.menu * {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 1;
+}
+
+.menu h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #f8f8f8; /* Brighter white for headings */
+}
+
+.menu p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #f8f8f8; /* Brighter white for tagline */
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+.menu-section h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #ffffff; /* Bright white for menu items */
+}
+
+.menu-item span {
+    font-size: 18px;
+}
